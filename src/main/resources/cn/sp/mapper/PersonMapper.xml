@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.sp.mapper.PersonMapper">
+    <resultMap id="baseResultMap" type="cn.sp.bean.Person">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="name" property="name" jdbcType="VARCHAR"></result>
+        <result column="sex" property="sex" jdbcType="VARCHAR"></result>
+        <result column="age" property="age" jdbcType="INTEGER"></result>
+        <result column="birthday" property="birthday" jdbcType="TIMESTAMP"></result>
+    </resultMap>
+</mapper>
